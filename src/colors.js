@@ -5,7 +5,7 @@ const colors = {
   text: '#333', // Dark Gray
   backgroundFirst: '#f5f5f5', // Light Gray
   backgroundSecond: '#f8f9fa',
-  backgroundThird: '#787a71'
+  backgroundThird: '#787a71',
 };
 
 export default colors;

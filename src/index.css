@@ -1,18 +1,24 @@
 @import url(https://db.onlinewebfonts.com/c/0376a58122a881d16a294512d3c947b1?family=Proxima+Nova+Regular);
 
 @font-face {
-  font-family: "Proxima Nova Regular";
-  src: url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot");
-  src: url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.svg#Proxima Nova Regular")format("svg");
+  font-family: 'Proxima Nova Regular';
+  src: url('https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot');
+  src:
+    url('https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff')
+      format('woff'),
+    url('https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.ttf')
+      format('truetype'),
+    url('https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.svg#Proxima Nova Regular')
+      format('svg');
 }
 
 /* Global Reset */
 * {
-  font-family: "Proxima Nova Regular" !important;
+  font-family: 'Proxima Nova Regular' !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
