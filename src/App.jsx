@@ -26,19 +26,13 @@ const App = () => {
         <Sidebar isOpen={isSidebarOpen} />
 
         {/* Main Content */}
-        <div className='main-content'>
+        <div className="main-content">
           <Header toggleSidebar={toggleSidebar} />
 
-          <div className='content-wrapper'>
+          <div className="content-wrapper">
             <Routes>
-              <Route
-                path='/'
-                element={<Home />}
-              />
-              <Route
-                path='/about'
-                element={<About />}
-              />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
             </Routes>
           </div>
 
@@ -50,4 +44,3 @@ const App = () => {
 };
 
 export default App;
-

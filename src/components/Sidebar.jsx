@@ -27,103 +27,97 @@ const Sidebar = ({ isOpen }) => {
   return (
     <div className={`sidebar ${isOpen ? 'open' : 'collapsed'}`}>
       {/* Logo Section */}
-      <div className='sidebar-logo-container'>
-        <div className='sidebar-logo'>
-          <FaTachometerAlt className='logo-icon' />
-          {isOpen && <span className='logo-text'>LOGO</span>}
+      <div className="sidebar-logo-container">
+        <div className="sidebar-logo">
+          <FaTachometerAlt className="logo-icon" />
+          {isOpen && <span className="logo-text">LOGO</span>}
         </div>
       </div>
 
       {/* Sidebar Menu */}
-      <nav className='sidebar-nav'>
+      <nav className="sidebar-nav">
         {/* Master Data with Dropdown */}
         <div className={`menu-item ${openMenu === 'master' ? 'open' : ''}`}>
           <div
-            className='menu-link d-flex align-items-center'
+            className="menu-link d-flex align-items-center"
             onClick={() => handleMenuToggle('master')}
           >
-            <div className='menu-icon-wrapper d-flex align-items-center gap-2'>
-              <FaCogs className='menu-icon' />
-              {isOpen && <div className='menu-name'>Master Data</div>}
+            <div className="menu-icon-wrapper d-flex align-items-center gap-2">
+              <FaCogs className="menu-icon" />
+              {isOpen && <div className="menu-name">Master Data</div>}
             </div>
             {isOpen &&
               (openMenu === 'master' ? <FaChevronUp /> : <FaChevronDown />)}
           </div>
 
           {openMenu === 'master' && (
-            <div className='submenu'>
+            <div className="submenu">
               <Link
-                to='/diagnostic'
+                to="/diagnostic"
                 className={`submenu-item border-bottom d-flex flex-column align-items-center ${
                   isActive('/diagnostic') ? 'active' : ''
                 }`}
               >
-                <FaNotesMedical className='submenu-icon mb-1' />
-                <div className='submenu-text'>Diagnostic Master</div>
+                <FaNotesMedical className="submenu-icon mb-1" />
+                <div className="submenu-text">Diagnostic Master</div>
               </Link>
 
               <Link
-                to='/category'
+                to="/category"
                 className={`submenu-item border-bottom d-flex flex-column align-items-center ${
                   isActive('/category') ? 'active' : ''
                 }`}
               >
-                <FaFileInvoice className='submenu-icon mb-1' />
-                <div className='submenu-text'>Category Master</div>
+                <FaFileInvoice className="submenu-icon mb-1" />
+                <div className="submenu-text">Category Master</div>
               </Link>
 
               <Link
-                to='/subcategory'
+                to="/subcategory"
                 className={`submenu-item border-bottom d-flex flex-column align-items-center ${
                   isActive('/subcategory') ? 'active' : ''
                 }`}
               >
-                <FaFileInvoice className='submenu-icon mb-1' />
-                <div className='submenu-text'>Subcategory Master</div>
+                <FaFileInvoice className="submenu-icon mb-1" />
+                <div className="submenu-text">Subcategory Master</div>
               </Link>
 
               <Link
-                to='/pricing'
+                to="/pricing"
                 className={`submenu-item border-bottom d-flex flex-column align-items-center ${
                   isActive('/pricing') ? 'active' : ''
                 }`}
               >
-                <FaFileInvoice className='submenu-icon mb-1' />
-                <div className='submenu-text'>Pricing Master</div>
+                <FaFileInvoice className="submenu-icon mb-1" />
+                <div className="submenu-text">Pricing Master</div>
               </Link>
             </div>
           )}
         </div>
 
         {/* User Management (No Submenu) */}
-        <div className='menu-item'>
+        <div className="menu-item">
           <Link
-            to='/user-management'
+            to="/user-management"
             className={`menu-link d-flex flex-column align-items-center ${
               isActive('/user-management') ? 'active' : ''
             }`}
           >
-            <FaUserCog
-              className='menu-icon mb-1'
-              style={{ marginRight: 0 }}
-            />
-            <div className='menu-name'>User Management</div>
+            <FaUserCog className="menu-icon mb-1" style={{ marginRight: 0 }} />
+            <div className="menu-name">User Management</div>
           </Link>
         </div>
 
         {/* Patient (No Submenu) */}
-        <div className='menu-item'>
+        <div className="menu-item">
           <Link
-            to='/patient'
+            to="/patient"
             className={`menu-link d-flex flex-column align-items-center ${
               isActive('/patient') ? 'active' : ''
             }`}
           >
-            <FaUsers
-              className='menu-icon mb-1'
-              style={{ marginRight: 0 }}
-            />
-            <div className='menu-name'>Patient</div>
+            <FaUsers className="menu-icon mb-1" style={{ marginRight: 0 }} />
+            <div className="menu-name">Patient</div>
           </Link>
         </div>
       </nav>
