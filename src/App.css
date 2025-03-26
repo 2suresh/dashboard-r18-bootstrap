@@ -1,0 +1,24 @@
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.sidebar.is-open {
+  transform: translateX(0);
+}
+
+.sidebar:not(.is-open) {
+  transform: translateX(-100%);
+}
+
+.content {
+  padding: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

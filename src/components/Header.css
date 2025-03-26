@@ -1,0 +1,66 @@
+/* Header Styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-btn:hover {
+  background-color: none !important;
+}
+
+/* Page Title Centered */
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+/* Profile Dropdown */
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.dropdown-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* Profile Image */
+.dropdown-toggle img {
+  transition: transform 0.3s;
+}
+
+.dropdown-toggle:hover img {
+  transform: scale(1.1);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu-custom {
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-menu-custom .dropdown-item {
+  transition: background 0.3s;
+}
+
+.dropdown-menu-custom .dropdown-item:hover {
+  background: #f0f0f0;
+}
