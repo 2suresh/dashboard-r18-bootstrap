@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ toggleSidebar }) => {
   return (
-    <header className="bg-light p-1 d-flex justify-content-between align-items-center shadow">
+    <header className="bg-light d-flex justify-content-between align-items-center shadow">
       {/* Left: Sidebar Toggle */}
       <button
         onClick={toggleSidebar}

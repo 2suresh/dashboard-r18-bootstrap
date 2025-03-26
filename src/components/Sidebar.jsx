@@ -13,6 +13,8 @@ import {
 } from 'react-icons/fa';
 import './Sidebar.css';
 
+import Logo from '../assets/BloodCollection.png';
+
 const Sidebar = ({ isOpen }) => {
   const [openMenu, setOpenMenu] = useState(null);
   const location = useLocation();
@@ -29,8 +31,7 @@ const Sidebar = ({ isOpen }) => {
       {/* Logo Section */}
       <div className="sidebar-logo-container">
         <div className="sidebar-logo">
-          <FaTachometerAlt className="logo-icon" />
-          {isOpen && <span className="logo-text">LOGO</span>}
+          <img src={Logo} alt="logo" />
         </div>
       </div>
 

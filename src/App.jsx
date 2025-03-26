@@ -8,6 +8,21 @@ import About from './pages/About';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import colors from './colors.js';
+import fontSizes from './fontSizes.js';
+
+const htmlRroot = document.documentElement;
+
+// Set CSS variables
+Object?.keys(colors)?.forEach((color) => {
+  htmlRroot?.style?.setProperty(`--${color}-color`, colors[color]);
+});
+
+// Set CSS variables for font sizes
+Object.keys(fontSizes).forEach((size) => {
+  htmlRroot?.style?.setProperty(`--font-size-${size}`, fontSizes[size]);
+});
+
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
